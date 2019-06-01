@@ -1,0 +1,50 @@
+body {
+	
+	color: #414141; /* Dark grey */
+    background-color: #EEEEEE; /* Light grey */
+	font-family: 'Arial';
+	font-size: 18px;
+}
+
+.content {
+	
+	margin: 0 auto;
+	width: 80%;
+}
+
+.contact {
+		
+	font-size: 1em;
+	line-height: 0.8em;
+/*	background-color: #BCBCBC; */
+}
+
+a:link {
+	
+	color: blue;
+}
+
+a:visited {
+
+	color: blue;
+}
+
+.content h1 {
+
+	font-size: 3em;
+	border-bottom: 2px solid darkgreen;
+}
+
+.content h2 {
+	
+	font-size: 1.8em;
+}
+
+.time {
+	color: darkgreen;
+}
+
+img {
+	width: 50%;
+	height: 50%;
+}
