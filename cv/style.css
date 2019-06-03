@@ -1,50 +1,84 @@
 body {
 	
-	color: #414141; /* Dark grey */
-    background-color: #EEEEEE; /* Light grey */
 	font-family: 'Arial';
-	font-size: 18px;
+	font-size: 12px;
+/*	color: #414141; 			/* Dark grey */ 
+    background-color: #EEEEEE; 	/* Light grey */
 }
 
-.content {
-	
-	margin: 0 auto;
-	width: 80%;
-}
-
-.contact {
-		
-	font-size: 1em;
-	line-height: 0.8em;
-/*	background-color: #BCBCBC; */
-}
-
-a:link {
-	
+a { 
 	color: blue;
-}
-
-a:visited {
-
-	color: blue;
-}
-
-.content h1 {
-
-	font-size: 3em;
-	border-bottom: 2px solid darkgreen;
-}
-
-.content h2 {
-	
-	font-size: 1.8em;
-}
-
-.time {
-	color: darkgreen;
-}
+	text-decoration: none;
+} /* Visited links do not change color */
 
 img {
-	width: 50%;
-	height: 50%;
+
+	height: 200px;
+	border: 2px solid black;
+}
+
+.container {
+
+	width: 95%;
+	margin: 0 auto;
+}
+
+/* Header style */
+
+h1 {
+	
+	font-size: 2.5em;
+	border-bottom: 2px solid green;
+	margin-bottom: 5px;
+}
+
+.contact-container {
+
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Skills section style */
+
+.skilltype-container {
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.skilltype {
+
+	margin: 0 10px;
+	background-color: #DDDDDD;
+	padding: 5px;
+}
+
+.skilltype h3 {
+
+	text-align: center;
+	margin-bottom: 5px;
+	margin-top: 0;
+}
+
+.skill-container {
+	
+	display: flex;
+	justify-content: left;
+	flex-wrap: wrap;
+}
+
+.skill {
+
+	margin: 3px;
+	padding: 5px;
+	background-color: #ccffcc;
+	border-radius: 1000000px;
+}
+
+/* columns */
+
+.column-container {
+
+	display: flex;
+	justify-content: space-between;
 }
