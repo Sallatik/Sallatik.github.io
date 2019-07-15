@@ -8,10 +8,10 @@ window.onload = function () {
 		timeBetweenDates(compareDate);
 	}, 1000);	
 
-	timer2 = setInterval(changePic, 1000);
+	timer2 = setInterval(changePic, 2000);
 }
 
-var pics = ["a.jpg", "b.jpg", "c.jpg"];
+var pics = ["a.jpg", "anime.jpg", "b.jpg", "d.jpg",  "gubi.jpg", "nojki.jpg", "sex.jpg", "попа.jpg"];
 var currentPic = 0;
 
 function changePic() {
