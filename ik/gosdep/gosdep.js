@@ -24,16 +24,40 @@ function changePic() {
 	currentPic++;
 }
 
-
-
-
 function create_timer_string(days, hours, minutes, seconds) {
 
-	var timer_string = 
-		days + " " + russify(days, "день", "дня", "дней") + ", " + 
-		hours + " " + russify(hours, "час", "часа", "часов") + ", " +
-		minutes + " " + russify(minutes, "минуту", "минуты", "минут") + " и " +
-		seconds + " " + russify(seconds, "секундy", "секунды", "секунд") + ".";
+	var parts = new Array();
+
+	if (days != 0) {
+		parts.push(days + " " + russify(days, "день", "дня", "дней"));
+	}
+
+	if (hours != 0) {
+		parts.push(hours + " " + russify(hours, "час", "часа", "часов"));
+	}
+
+	if (minutes != 0) {
+		parts.push(minutes + " " + russify(minutes, "минуту", "минуты", "минут"));
+	}
+
+	if (seconds != 0) {
+		parts.push(seconds + " " + russify(seconds, "секунду", "секунды", "секунд"));
+	}
+
+	var timer_string = "", lastIndex = parts.length - 1;
+
+	for (var i = 0; i <= lastIndex; i++) {
+
+		timer_string = timer_string + parts[i];
+
+		if (i == lastIndex) {
+			timer_string += ".";
+		} else if (i == lastIndex - 1) {
+			timer_string += " и ";
+		} else {
+			timer_string += ", ";
+		}
+	}
 
 	return timer_string;
 }
