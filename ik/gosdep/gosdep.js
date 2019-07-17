@@ -1,7 +1,7 @@
 window.onload = function () {
 	
 	var timer, timer2;
-	var compareDate = new Date(Date.UTC(2019, 6, 7, 20));
+	var compareDate = new Date(Date.UTC(2019, 6, 17, 21));
 	
 	timeBetweenDates(compareDate);
 	timer = setInterval(function() {
